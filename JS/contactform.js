@@ -29,7 +29,9 @@ var concernSubmit = function() {
 
 concernForm.addEventListener('submit', concernSubmit);
 
+
 //Comment Form
+
 var Comment = function(userName, text) {
   this.userName = userName;
   this.text = text;
@@ -53,7 +55,7 @@ var Andy = new Comment('Andy Dwyer', 'Ron gave me the best advice I ever receive
 commentData.push(Andy);
 var Jerry = new Comment('Jerry/Gary/Larry Gergich', 'Ron has cried twice in his life. Once, when he was 7 and was hit by a bus, and again when he learned that L\'il Sebastian had passed. That\'s the kind of man I\'d like to see as President.');
 commentData.push(Jerry);
-var Burt = new Comment('Burt Macklin, FBI','Burt Macklin. FBI. You thought I was dead? So did the President\'s enimies.');
+var Burt = new Comment('Burt Macklin, FBI','Burt Macklin. FBI. You thought I was dead? So did the President\'s enemies.');
 commentData.push(Burt);
 
 var renderAllComments = function() {
