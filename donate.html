@@ -39,25 +39,27 @@
     </div>
   </section>
   <section>
-    <div id="donation">
-       <label for="option1" class="radioButtons">
-        <input type="radio" id="option1" name="donate" value="25">$25</label>
-       <label for="option2" class="radioButtons">
-        <input type="radio" id="option2" name="donate" value="50">$50</label>
-       <label for="option3" class="radioButtons">
-        <input type="radio" id="option3" name="donate" value="100">$100</label>
-       <label for="option4" class="radioButtons">
-        <input type="radio" id="option4" name="donate" value="500">$500</label>
-       <label for="option5" class="radioButtons">
-        <input type="radio" id="option5" name="donate" value="1000">$1,000</label>
-       <label for="option6" class="radioButtons">
-        <input type="radio" id="option6" name="donate" value="2700">$2,700</label>
-       <label for="option7" class="radioButtons">
-        <input type="radio" id="option8" name="donate" value="other">Other Amount</label>
-       <label for="other">
-        <input type="text" name="other" value="Enter Amount"></label>
-    </div>
     <div>
+      <form id="donation">
+       <label for="option1" class="radioButtons">
+        <input type="radio" id="option1" name="donate" value="25" onchange="hideInput()">$25</label>
+       <label for="option2" class="radioButtons">
+        <input type="radio" id="option2" name="donate" value="50" onchange="hideInput()">$50</label>
+       <label for="option3" class="radioButtons">
+        <input type="radio" id="option3" name="donate" value="100" onchange="hideInput()">$100</label>
+       <label for="option4" class="radioButtons">
+        <input type="radio" id="option4" name="donate" value="500" onchange="hideInput()">$500</label>
+       <label for="option5" class="radioButtons">
+        <input type="radio" id="option5" name="donate" value="1000" onchange="hideInput()">$1,000</label>
+       <label for="option6" class="radioButtons">
+        <input type="radio" id="option6" name="donate" value="2700" onchange="hideInput()">$2,700</label>
+       <label for="option7" class="radioButtons">
+        <input type="radio" id="option8" name="donate" onchange="showInput()">Other Amount</label>
+       <label for="other">
+        <input type="text" id="other"></label>
+      </form>
+    </div>
+    <div id="info">
       <form id="paymentInfo">
         <fieldset>
         <legend>Payment Information</legend>
@@ -65,10 +67,6 @@
             <input name="credit" type="text" /></lable>
           <lable for="ccv">CCV:
             <input name="ccv" type="text" /></lable>
-        </fieldset>
-      </form>
-      <form id="personalInfo">
-        <fieldset>
         <legend>Personal Information</legend>
           <lable for="firstName">First Name:
             <input name="firstName" type="text" /></lable>
@@ -78,9 +76,6 @@
             <input name="phoneNumber" type="text" /></lable>
           <lable for="email">Email:
             <input name="email" type="text" /></lable>
-        </fieldset>
-       <form id="personalInfo">
-        <fieldset>
         <legend>Billing Information</legend>
           <lable for="address">Address:
             <input name="address" type="text" /></lable>
@@ -90,10 +85,11 @@
             <input name="state" type="text" /></lable>
           <lable for="zip">Zip:
             <input name="zip" type="text" /></lable>
+       <!--    <label>
+            <input type="checkbox" id="cbox" value="check"> Send My Complimentary Thank You Gift</label> -->
+       <button id="sub" button type="submit">Donate!</button>
         </fieldset>
       </form>
-       <label><input type="checkbox" id="cbox" value="check"> Send My Complimentary Thank You Gift</label>
-       <button id="sub" button type="submit">Donate!</button>
     </div>
   </section>
   <footer>
@@ -107,5 +103,6 @@
     <div id="copyright"><p>&copy; Copyright 2015</p></div>
     <div id="contactus"><a href="google.com">CONTACT US!</a></div>
   </footer>
+  <script type="text/javascript" src="donate.js"></script>
 </body>
 </html>
