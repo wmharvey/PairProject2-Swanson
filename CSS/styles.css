@@ -4,8 +4,8 @@
 }
 
 body {
-  background: #bdc3c7;
   font-family: 'Raleway', sans-serif;
+  background-image: url(../IMG/treebark.png);
 }
 
 /*Header/NavBar Styles*/
@@ -14,8 +14,8 @@ header {
   background-color: #2980b9;
   height: 200px;
   margin-left: -8px;
-  margin-top: -10px;
   margin-right: -10px;
+  margin-top: -10px;
 }
 
 #logo {
@@ -49,6 +49,16 @@ nav li {
   margin-right: 50px;
 }
 
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+color: #e74c3c;
+transition: color .4s;
+}
+
 
 /*Body Styles*/
 
@@ -61,12 +71,11 @@ p, li {
   width: 100%;
   margin: 0 auto;
   margin-top: 30px;
-  margin-left: 300px;
   padding-bottom: 30px;
 }
 
 #contactform {
-  width: 30%;
+  width: 40%;
   float: left;
   margin-top: 90px;
   background: white;
@@ -76,6 +85,10 @@ p, li {
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+}
+
+#contactposition {
+  margin-left: 270px;
 }
 
 #contactform h1 {
@@ -90,6 +103,9 @@ p, li {
   margin-top: 10px;
   margin-left: 38px;
   color: #2980b9;
+}
+
+#contactform label {
   text-transform: uppercase;
 }
 
@@ -158,8 +174,11 @@ textarea {
   margin-top: 10px;
   margin-left: 38px;
   color: #2980b9;
-  text-transform: uppercase;
   margin-bottom: -10px;
+}
+
+#commentform label {
+  text-transform: uppercase;
 }
 
 
@@ -298,6 +317,16 @@ footer {
   color: white;
   letter-spacing: .2em;
   font-size: 20px;
+}
+
+#footernav a {
+  text-decoration: none;
+  color: white;
+}
+
+#footernav a:hover {
+color: #e74c3c;
+transition: color .4s;
 }
 
 
