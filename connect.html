@@ -2,12 +2,15 @@
 <html>
 <head>
   <meta charset = "UTF-8">
+  <link rel = "stylesheet" type = "text/css" href="CSS/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <title></title>
 </head>
 <body>
 <header>
 <div id="logo">
-<img src="logo.png">
+<img src="IMG/logo.png">
 </div>
 <nav>
   <ul>
@@ -17,10 +20,10 @@
   </ul>
 </nav>
 </header>
-
+<div id="contact">
 <form id="contactform">
   <fieldset>
-    <legend>Contact Us</legend>
+    <h1>Contact Us:</h1>
 
             <label for="firstname">First Name: </label>
             <input name="firstname" type="text">
@@ -28,39 +31,60 @@
             <label for="lastname">Last Name: </label>
             <input name="lastname" type="text">
             </br>
-            <textarea name="concern" placeholder="Enter text here..."></textarea>
+            <div id="textarea">
+            <textarea id="textbox" name="concern" placeholder="Enter text here..."></textarea>
+            </div>
             </br>
-            <button id="submit-button" type="submit">Submit</button>
+            <div id="submitbutton">
+            <button class="submit" type="submit">Submit</button>
+            </div>
   </fieldset>
   </form>
+  <img src="IMG/ronswanson.png">
+  </div>
 
+<div id="commentbackground">
 <div id="commentsection">
-<form id="commentform">
-  <fieldset>
-    <legend>We'd love your input!</legend>
 
-            <label for="name">Name: </label>
-            <input name="name" type="text">
-            </br>
-            <textarea name="comment" placeholder="Enter text here..."></textarea>
-            </br>
-            <button id="submit-button" type="submit">Submit</button>
+  <div id="displayed">
+  <h1>Feedback</h1>
+  <ul id="commentdisplay"></ul>
+  </div>
+
+  <div id="commentsubmit">
+  <form id="commentform">
+  <fieldset>
+    <h1>We'd love your input!</h1>
+
+      <label for="name">Name: </label>
+      <input name="name" type="text">
+      </br>
+      <textarea id="textbox2" name="comment" placeholder="Enter text here..."></textarea>
+      </br>
+      <button class="submit" type="submit">Submit</button>
   </fieldset>
-  </form>
+</form>
 </div>
-<ul id="commentdisplay"></ul>
+</div>
 </div>
 
 <footer>
 <div id="socialmedia">
   <ul>
-    <li><a href="https://www.facebook.com">Facebook</a></li>
-    <li><a href="https://www.instagram.com">Instagram</a></li>
-    <li><a href="https://plus.google.com">Google+</a></li>
+    <li><a href="https://www.facebook.com"><img src="IMG/facebook.png"></a></li>
+    <li><a href="https://www.instagram.com"><img src="IMG/instagram.png"></a></li>
+    <li><a href="https://plus.google.com"><img src="IMG/googleplus.png"></a></li>
+  </ul>
+</div>
+<div id="footernav">
+  <ul>
+  <li>About</li>
+  <li>Support</li>
+  <li>Contact</li>
+  <li>The Team</li>
   </ul>
 </div>
 <div id="copyright"><p>&copy; Copyright 2015</p></div>
-<div id="contactus"><a href="google.com">CONTACT US!</a></div>
 </footer>
 
  <script src ="JS/contactform.js" type="text/javascript"></script>
