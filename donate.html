@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <a href=""><li>About</li></a>
+        <a href=""><li>Support</li></a>
+        <a href=""><li>Connect</li></a>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2>In return for your support at each level, please accept a complimentary gift:</h2>
+    <div id="giftsLeft">
+      <figure>
+        <img src"">
+        <figCaption>$25-$49</figCaption>
+      </figure>
+      <figure>
+        <img src"">
+        <figCaption>$100-$499</figCaption>
+      </figure>
+      <figure>
+        <img src"">
+        <figCaption>$1,000-$2,699</figCaption>
+      </figure>
+    </div>
+    <div id="giftsRight">
+      <figure>
+        <img src"">
+        <figCaption>$50-$99</figCaption>
+      </figure>
+      <figure>
+        <img src"">
+        <figCaption>$500-$999</figCaption>
+      </figure>
+      <figure>
+        <img src"">
+        <figCaption>$2,700</figCaption>
+      </figure>
+    </div>
+  </section>
+  <section>
+    <div id="giftForms">
+    <div>
+      <form id="donation">
+        <input type="radio" id="option1" name="donate" value="25" onchange="hideInput()">
+       <label for="option1" class="radioButtons">$25</label>
+        <input type="radio" id="option2" name="donate" value="50" onchange="hideInput()">
+       <label for="option2" class="radioButtons">$50</label>
+        <input type="radio" id="option3" name="donate" value="100" onchange="hideInput()">
+       <label for="option3" class="radioButtons">$100</label>
+        <input type="radio" id="option4" name="donate" value="500" onchange="hideInput()">
+       <label for="option4" class="radioButtons">500</label>
+        <input type="radio" id="option5" name="donate" value="1000" onchange="hideInput()">
+       <label for="option5" class="radioButtons">$1,000</label>
+        <input type="radio" id="option6" name="donate" value="2700" onchange="hideInput()">
+       <label for="option6" class="radioButtons">2,700</label>
+        <input type="radio" id="option7" name="donate" onchange="showInput()" value="">
+       <label for="option7" id="label7" class="radioButtons">Other Amount</label>
+        <div id="hidden">
+          <input type="text" id="other" name="otherAmount" placeholder="Max: $2,700">
+           <button id="other" button type="submit">Set Amount</button></label>
+        </div>
+      </form>
+    </div>
+    <div id="info">
+      <form id="paymentInfo">
+        <fieldset>
+        <legend>Payment Information</legend>
+        <label>If you have given previously, enter your credit card number and check the box to the right:</label><br />
+          <lable for="credit">Credit Card Number:
+            <input name="credit" type="text" id="cred"/></lable>
+          <lable for="ccv">CCV:
+            <input name="ccv" type="text" /></lable>
+            <label><input type="checkbox" id="cbox1" value="checkbox" onCheck=
+            "handleCheck(this)">I have given previously</label><br />
+        <legend>Personal Information</legend>
+          <lable for="firstName">First Name:
+            <input name="firstName" type="text" id="first" /></lable>
+          <lable for="lastName">Last Name:
+            <input name="lastName" type="text" id="last"/></lable>
+          <lable for="phoneNumber">Phone Number:
+            <input name="phoneNumber" type="text" id="phone"/></lable>
+          <lable for="email">Email:
+            <input name="email" type="text" id="email"/></lable>
+        <legend>Billing Information</legend>
+          <lable for="address">Address:
+            <input name="address" type="text" id="address"/></lable>
+          <lable for="city">City:
+            <input name="city" type="text" id="city"/></lable>
+          <lable for="state">State:
+            <input name="state" type="text" id="state"/></lable>
+          <lable for="zip">Zip:
+            <input name="zip" type="text" id="zip"/></lable>
+          <button id="sub" button type="submit">Donate!</button>
+        </fieldset>
+      </form>
+    </div>
+    </div>
+  </section>
+  <div id="empty">
+  </div>
+  <footer>
+    <div id="socialmedia">
+      <ul>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+        <li><a href="https://plus.google.com">Google+</a></li>
+      </ul>
+    </div>
+    <div id="copyright"><p>&copy; Copyright 2015</p></div>
+    <div id="contactus"><a href="google.com">CONTACT US!</a></div>
+  </footer>
+  <script type="text/javascript" src="donate.js"></script>
+</body>
+</html>
