@@ -63,7 +63,7 @@
         <input type="radio" id="option7" name="donate" onchange="showInput()" value="">
        <label for="option7" id="label7" class="radioButtons">Other Amount</label>
         <div id="hidden">
-          <input type="text" id="other" name="otherAmount">
+          <input type="text" id="other" name="otherAmount" placeholder="Max: $2,700">
            <button id="other" button type="submit">Set Amount</button></label>
         </div>
       </form>
@@ -73,27 +73,29 @@
         <fieldset>
         <legend>Payment Information</legend>
           <lable for="credit">Credit Card Number:
-            <input name="credit" type="text" /></lable>
+            <input name="credit" type="text" id="cred"/></lable>
           <lable for="ccv">CCV:
             <input name="ccv" type="text" /></lable>
+            <label><input type="checkbox" id="cbox1" value="checkbox" onCheck=
+            "handleCheck(this)">I have given previously</label><br />
         <legend>Personal Information</legend>
           <lable for="firstName">First Name:
-            <input name="firstName" type="text" /></lable>
+            <input name="firstName" type="text" id="first" /></lable>
           <lable for="lastName">Last Name:
-            <input name="lastName" type="text" /></lable>
+            <input name="lastName" type="text" id="last"/></lable>
           <lable for="phoneNumber">Phone Number:
-            <input name="phoneNumber" type="text" /></lable>
+            <input name="phoneNumber" type="text" id="phone"/></lable>
           <lable for="email">Email:
-            <input name="email" type="text" /></lable>
+            <input name="email" type="text" id="email"/></lable>
         <legend>Billing Information</legend>
           <lable for="address">Address:
-            <input name="address" type="text" /></lable>
+            <input name="address" type="text" id="address"/></lable>
           <lable for="city">City:
-            <input name="city" type="text" /></lable>
+            <input name="city" type="text" id="city"/></lable>
           <lable for="state">State:
-            <input name="state" type="text" /></lable>
+            <input name="state" type="text" id="state"/></lable>
           <lable for="zip">Zip:
-            <input name="zip" type="text" /></lable>
+            <input name="zip" type="text" id="zip"/></lable>
           <button id="sub" button type="submit">Donate!</button>
         </fieldset>
       </form>
