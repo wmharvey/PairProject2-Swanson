@@ -1,0 +1,306 @@
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #bdc3c7;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Header/NavBar Styles*/
+
+header {
+  background-color: #2980b9;
+  height: 200px;
+  margin-left: -8px;
+  margin-top: -10px;
+  margin-right: -10px;
+}
+
+#logo {
+float: left;
+margin-right: 20px;
+margin-top: 25px;
+}
+
+#title {
+  font-family: 'Bree serif', serif;
+  color: white;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  padding: 0%;
+  display: inline;
+  margin-top: 80px;
+  margin-right: 90px;
+}
+
+nav li {
+  font-family: 'Raleway', sans-serif;
+  display: inline;
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+
+/*Body Styles*/
+
+p, li {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Contact Form and Photo*/
+#contact {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 300px;
+  padding-bottom: 30px;
+}
+
+#contactform {
+  width: 30%;
+  float: left;
+  margin-top: 90px;
+  background: white;
+  border: 0;
+  border-radius: 2px;
+  text-align: left;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+}
+
+#contactform h1 {
+  color: #e74c3c;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  margin-top: -5px;
+}
+
+#contactform label, #contactform input{
+  margin-top: 10px;
+  margin-left: 38px;
+  color: #2980b9;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border: 0;
+}
+
+textarea {
+  margin-top: 35px;
+}
+
+#contact img {
+  clear: both;
+  position: relative;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+#submitbutton {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.submit {
+  background: #e74c3c;
+  width: 70%;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: .2em;
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+}
+
+#textbox {
+  height: 90px;
+  width: 80%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-color: #bdc3c7;
+  font-size: 15px;
+}
+
+#textarea {
+  text-align: center;
+}
+
+/*Comment Form and Comments*/
+
+#commentform {
+  margin-top: 30px;
+  background: white;
+  border: 0;
+  border-radius: 2px;
+  text-align: left;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  width: 100%;
+  margin-right: 20px;
+}
+
+#commentform label, #commentform input{
+  margin-top: 10px;
+  margin-left: 38px;
+  color: #2980b9;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+
+
+#commentform .submit {
+  background-color: #2980b9;
+  margin-left: 60px;
+  margin-bottom: 15px;
+}
+
+#commentsubmit {
+  margin-left: 30px;
+}
+#commentform h1 {
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 40px;
+  margin-top: -5px;
+  margin-left: 20px;
+}
+
+#textbox2 {
+  height: 90px;
+  width: 80%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-color: #bdc3c7;
+  font-size: 15px;
+  margin-left: 38px;
+  margin-bottom: 25px;
+}
+
+#commentsection {
+  display: inline-flex;
+  margin: 0 auto;
+  margin-left: 70px;
+  margin-top: 50px;
+  background: #e74c3c;
+  padding-bottom: 50px;
+}
+
+#displayed {
+  width: 55%;
+  background: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  border: 0;
+  margin-right: 55px;
+
+}
+
+#displayed h1 {
+  color: #e74c3c;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  margin-top: -2px;
+  padding-left: 35px;
+  color: #2980b9;
+}
+
+#commentform h1 {
+  color: #2980b9;
+}
+
+#commentdisplay {
+  list-style-type: none;
+  padding-right: 30px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#commentdisplay li {
+  margin-top: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#commentbackground {
+  background: #e74c3c;
+  border-top: 10px solid white;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/*Footer Styles*/
+
+footer {
+  clear: both;
+  background: #2980b9;
+  height: 200px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+#socialmedia ul {
+  float: left;
+  margin-right: 20px;
+  padding: 0%;
+  display: inline;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+#socialmedia li {
+  display: inline;
+  list-style-type: none;
+}
+
+#socialmedia img {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
+#copyright {
+  clear: both;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+#footernav {
+  float: right;
+  margin-top: 30px;
+  margin-right: 150px;
+}
+
+#footernav li {
+  font-family: 'Raleway', sans-serif;
+  list-style-type: none;
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: .2em;
+  font-size: 20px;
+}
+
+
+
+
+
