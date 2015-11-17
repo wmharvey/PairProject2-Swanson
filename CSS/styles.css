@@ -258,13 +258,125 @@ textarea {
   font-family: 'Raleway', sans-serif;
 }
 
-#commentbackground {
+#redbody {
   background: #e74c3c;
   border-top: 10px solid white;
   margin-left: -10px;
   margin-right: -10px;
 }
 
+/*Home Page Body Styles*/
+
+#map {
+  height: 500px;
+  width: 500px;
+}
+
+#highlights {
+  border: #000 1px solid;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+#events {
+  float: left;
+  background: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  margin-top: 10%;
+  margin-left: 15%;
+  padding: 20px;
+}
+
+#map {
+  float: right;
+  margin-right: 15%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+}
+
+#mainphoto {
+  width: 100%;
+  text-align: center;
+}
+
+#highlights {
+  border: 0;
+  background: white;
+  width: 60%;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  font-size: 18px;
+  padding: 10px;
+  color: #2980b9;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  margin-top: -25px;
+  position: relative;
+}
+
+#updates {
+  padding: 20px;
+  background: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#events li{
+  list-style-type: none;
+  text-align: left;
+  padding-top: 5px;
+  color: #e74c3c;
+}
+
+#updates h2 {
+  color: #e74c3c;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  margin-top: -2px;
+  padding-left: 35px;
+  color: #2980b9;
+}
+
+#events h2{
+  color: #e74c3c;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 30px;
+  margin-top: -2px;
+  color: #2980b9;
+}
+
+#indexbackground {
+  background: #e74c3c;
+  border-top: 10px white solid;
+  margin-top: 40px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+#indexbackground::after {
+   content: "";
+   display: block;
+   clear: both;
+}
 /*Footer Styles*/
 
 footer {
