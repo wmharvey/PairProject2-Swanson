@@ -3,6 +3,7 @@ var value;
 var radios = document.forms["donation"].elements["donate"];
 var radioForm = document.getElementById("donation");
 var billingForm = document.getElementById("paymentInfo");
+var information = [];
 
 for(var i = 0; i < 6; i++) {
   radios[i].onclick = function() {
@@ -45,6 +46,7 @@ var Billing = function (creditNum, ccv, firstName, lastName, phone, email, addre
   this.city = city;
   this.state = state;
   this.zip = zip;
+  information.push(this);
 };
 
 var handleBilling = function (event) {
