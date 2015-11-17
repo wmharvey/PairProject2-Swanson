@@ -1,0 +1,59 @@
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background: #2980b9;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  background: #2980b9;
+  width: 100%;
+  height: 100px;
+}
+#tite {
+  font-family: 'Bree serif', serif;
+  color: white;
+}
+nav {
+  clear: both;
+  height: 50px;
+  background-color: #c0392b;
+  margin-top: 115px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0%;
+}
+
+nav li {
+  display: inline;
+  margin: 0% 10% 0% 10%;
+  border-color: white;
+  border-width: 10px;
+}
+
+h1, h2, h3{
+  font-family: 'Bree serif', serif;
+  color: white;
+  margin: 5%;
+}
+
+p, li {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding: 5px;
+  margin:2%;
+}
+
+.content {
+  float: left;
+  margin: 5%;
+  background-color: #c0392b;
+}
