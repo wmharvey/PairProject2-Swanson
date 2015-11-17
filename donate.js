@@ -4,6 +4,21 @@ var radioForm = document.getElementById("donation");
 var billingForm = document.getElementById("paymentInfo");
 var cbox1 = document.getElementById("cbox1")
 var information = [];
+var storedBilling = [];
+  var getData = localStorage.getItem('billingInformation');
+  var getDataParsed = JSON.parse(getData);
+
+var formIds = {
+  creditNum: document.getElementById("cred"),
+  first: document.getElementById("first"),
+  last: document.getElementById("last"),
+  phone: document.getElementById("phone"),
+  email: document.getElementById("email"),
+  address: document.getElementById("address"),
+  city: document.getElementById("city"),
+  state: document.getElementById("state"),
+  zip: document.getElementById("zip")
+};
 
 for(var i = 0; i < 6; i++) {
   radios[i].onclick = function() {
@@ -23,7 +38,6 @@ var showInput = function() {
   document.getElementById("hidden").style.display = "inline";
 };
 //get info from forms
-
 var Billing = function (creditNum, ccv, firstName, lastName, phone, email, address, city, state, zip) {
   this.creditNum = creditNum;
   this.ccv = ccv;
@@ -38,22 +52,8 @@ var Billing = function (creditNum, ccv, firstName, lastName, phone, email, addre
   information.push(this);
 };
 
-var formIds = {
-  creditNum: document.getElementById("cred"),
-  first: document.getElementById("first"),
-  last: document.getElementById("last"),
-  phone: document.getElementById("phone"),
-  email: document.getElementById("email"),
-  address: document.getElementById("address"),
-  city: document.getElementById("city"),
-  state: document.getElementById("state"),
-  zip: document.getElementById("zip")
-};
 
 var handleCheck = function(checkbox) {
-  var getData = localStorage.getItem('billingInformation');
-  var getDataParsed = JSON.parse(getData);
-  information = getDataParsed;
   if (cbox1.checked) {
     for (var i = 0; i < getDataParsed.length; i++) {
       if (formIds.creditNum.value === getDataParsed[i].creditNum) {
@@ -88,11 +88,12 @@ var handleBilling = function (event) {
   var state = event.target.state.value;
   var zip = event.target.zip.value;
 
+  if (cbox1.checked === false) {
   var newBilling = new Billing(credit, ccv, first, last, number, email, add, city, state, zip);
-  console.log(credit + " is your credit card number");
-
   var toLocal = JSON.stringify(information);
   localStorage.setItem('billingInformation', toLocal);
+  console.log(credit + " is your credit card number");
+  }
 
   var hideForms = function() {
     var box = document.getElementById("giftForms");
