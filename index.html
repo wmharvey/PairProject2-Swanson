@@ -6,6 +6,8 @@
   <title>Ron Swanson</title>
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="tvcredits.jquery.js"></script>
 </head>
 <header>
 <div id="logo">
@@ -23,6 +25,16 @@
 <div id="mainphoto">
 <h2>PHOTO SLIDESHOW</h2>
 <p>Bacon ipsum dolor amet beef ribs flank landjaeger hamburger boudin drumstick sausage ball tip kevin pork belly chuck alcatra. Pastrami sirloin bresaola drumstick. Pork chop rump kielbasa, andouille drumstick fatback pork shoulder capicola meatball jerky landjaeger beef chicken porchetta. Cupim jowl pastrami strip steak andouille tri-tip bacon. Picanha kevin tongue rump. Venison turducken frankfurter beef ribs rump porchetta. Beef chicken capicola sirloin ham hock venison.</p>
+</div>
+<div id="highlights">
+    <ul>
+      <li>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.</li>
+      <li>Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</li>
+      <li>Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.</li>
+      <li>Manduma pindureta quium dia nois paga.</li>
+      <li>Sapien in monti palavris qui num significa nadis i pareci latim. </li>
+      <li>Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</li>
+    </ul>
 </div>
 <div id="updates">
 <h2>NEWS & INFO</h2>
@@ -52,5 +64,6 @@
 </footer>
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 <script src="map.js"></script>
+<script>$("#highlights").tvCredits({direction: 'left', speed: 50000,});</script>
 </body>
 </html>
