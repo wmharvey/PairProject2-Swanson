@@ -377,6 +377,174 @@ textarea {
    display: block;
    clear: both;
 }
+
+/*About Styles*/
+
+#red {
+  background: #e74c3c;
+  border-top: 10px white solid;
+  margin-top: 40px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -20px;
+}
+
+#content {
+  padding: 60px;
+}
+
+#content h1 {
+  color: white;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  margin-top: -15px;
+}
+
+#content p {
+  font-style: normal;
+}
+
+#content h2 {
+  color: white;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+}
+
+.quote {
+  font-style: italic;
+}
+
+#virtues {
+  text-align: center;
+}
+
+
+
+#support {
+  padding-top: 40px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 40px;
+}
+
+#support p {
+  padding: 10px;
+}
+
+#support::after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+#top {
+  padding-bottom: 30px;
+}
+
+#top:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+/*Team Page Styles*/
+
+#miranda {
+  width: 35%;
+  background: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  border: 10px solid #2980b9;
+  float: left;
+  height: 530px;
+}
+
+#miranda img {
+  padding-left: 18%;
+}
+
+#rick {
+  width: 35%;
+  background: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  border: 10px solid #e74c3c;
+  float: right;
+  height: 530px;
+}
+
+#rick img {
+  padding-left: 18%;
+}
+
+#thom {
+  width: 35%;
+  background: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  border: 10px solid #e74c3c;
+  float: left;
+  height: 530px;
+}
+
+#thom img {
+  padding-left: 18%;
+}
+
+#george {
+  width: 35%;
+  background: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  border: 10px solid #2980b9;
+  float: right;
+  height: 530px;
+}
+
+#george img {
+  padding-left: 18%;
+}
+#miranda h1 {
+  color: #e74c3c;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 35px;
+}
+
+#george h1 {
+  color: #e74c3c;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 35px;
+}
+
+#thom  h1 {
+  color: #2980b9;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 35px;
+}
+
+#rick  h1 {
+  color: #2980b9;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 35px;
+}
+
+
+
+
 /*Footer Styles*/
 
 footer {
@@ -385,6 +553,7 @@ footer {
   height: 200px;
   margin-left: -10px;
   margin-right: -10px;
+  border-top: 10px solid white;
 }
 
 #socialmedia ul {
@@ -412,6 +581,7 @@ footer {
   text-align: center;
   color: white;
   text-transform: uppercase;
+  font-style: normal;
 
 }
 
@@ -419,6 +589,7 @@ footer {
   float: right;
   margin-top: 30px;
   margin-right: 150px;
+  font-style: normal;
 }
 
 #footernav li {
@@ -429,6 +600,7 @@ footer {
   color: white;
   letter-spacing: .2em;
   font-size: 20px;
+  font-style: normal;
 }
 
 #footernav a {
