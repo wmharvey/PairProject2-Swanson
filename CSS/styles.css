@@ -420,7 +420,9 @@ textarea {
   text-align: center;
 }
 
-
+.video {
+  float: right;
+}
 
 #support {
   padding-top: 40px;
