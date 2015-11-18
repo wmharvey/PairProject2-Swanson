@@ -4,9 +4,12 @@ var radioForm = document.getElementById("donation");
 var billingForm = document.getElementById("paymentInfo");
 var cbox1 = document.getElementById("cbox1")
 var information = [];
-var storedBilling = [];
+// var storedBilling = [];
   var getData = localStorage.getItem('billingInformation');
   var getDataParsed = JSON.parse(getData);
+  if (localStorage.billingInformation) {
+  information = getDataParsed;
+  };
 
 var formIds = {
   creditNum: document.getElementById("cred"),
@@ -55,16 +58,16 @@ var Billing = function (creditNum, ccv, firstName, lastName, phone, email, addre
 
 var handleCheck = function(checkbox) {
   if (cbox1.checked) {
-    for (var i = 0; i < getDataParsed.length; i++) {
-      if (formIds.creditNum.value === getDataParsed[i].creditNum) {
-        formIds.first.value = getDataParsed[i].firstName;
-        formIds.last.value =getDataParsed[i].lastName;
-        formIds.phone.value = getDataParsed[i].phone;
-        formIds.email.value = getDataParsed[i].email;
-        formIds.address.value = getDataParsed[i].address;
-        formIds.city.value = getDataParsed[i].city;
-        formIds.state.value = getDataParsed[i].state;
-        formIds.zip.value = getDataParsed[i].zip;
+    for (var i = 0; i < information.length; i++) {
+      if (formIds.creditNum.value === information[i].creditNum) {
+        formIds.first.value = information[i].firstName;
+        formIds.last.value =information[i].lastName;
+        formIds.phone.value = information[i].phone;
+        formIds.email.value = information[i].email;
+        formIds.address.value = information[i].address;
+        formIds.city.value = information[i].city;
+        formIds.state.value = information[i].state;
+        formIds.zip.value = information[i].zip;
       }
     }
   }
