@@ -460,7 +460,7 @@ textarea {
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   border: 10px solid #2980b9;
   float: left;
-  height: 530px;
+  height: 540px;
 }
 
 #miranda img {
@@ -476,7 +476,7 @@ textarea {
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   border: 10px solid #e74c3c;
   float: right;
-  height: 530px;
+  height: 540px;
 }
 
 #rick img {
@@ -492,7 +492,7 @@ textarea {
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   border: 10px solid #e74c3c;
   float: left;
-  height: 530px;
+  height: 540px;
 }
 
 #thom img {
@@ -508,11 +508,30 @@ textarea {
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   border: 10px solid #2980b9;
   float: right;
-  height: 530px;
+  height: 540px;
 }
+
 
 #george img {
   padding-left: 18%;
+}
+
+#sebastian {
+  width: 90%;
+  margin: 5%;
+  background: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  border: 10px solid #2980b9;
+  float: left;
+  height: 300px;
+}
+
+#sebastian img {
+  padding-left: 5%;
+  padding-right: 2%;
 }
 #miranda h1 {
   color: #e74c3c;
@@ -542,7 +561,19 @@ textarea {
   font-size: 35px;
 }
 
-
+#sebastian h1 {
+  text-align: center;
+}
+#sebastian p {
+  padding:3%;
+  margin-left:3%;
+}
+.grow:hover
+{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
 
 
 /*Footer Styles*/
