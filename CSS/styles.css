@@ -148,6 +148,16 @@ textarea {
   border: 0;
 }
 
+
+.submit:hover {
+  background:#2980b9;
+  transition: color .4s;
+}
+
+#commentsubmit .submit:hover {
+  background:#e74c3c;
+}
+
 #textbox {
   height: 90px;
   width: 80%;
