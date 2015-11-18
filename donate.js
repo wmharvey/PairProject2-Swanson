@@ -100,6 +100,8 @@ var handleBilling = function (event) {
 
   var hideForms = function() {
     var box = document.getElementById("giftForms");
+    var gifts = document.getElementById("gifts")
+    gifts.style.display = "none";
     box.style.display = "none";
     }
 
@@ -108,10 +110,10 @@ var handleBilling = function (event) {
     var greeting = document.createElement("h3");
     var position = document.getElementById("empty");
     giftPic.src = "http://thenewswheel.com/wp-content/uploads/2015/01/ron-swanson-630x345.png";
-    greeting.textContent = " Thank you " + first + ", for the donation of $" + value + ", your gift of equal value will arrive in 6-8 weeks. Remember to vote for me on November fourth. Or don't. I don't care. -Ron";
+    greeting.textContent = " Thank you " + first + ", for the donation of $" + value + ", your gift of equal value will arrive in 6-8 weeks. Remember to vote for me on November fourth. Or don't. I don't care. ~ Ron";
     position.appendChild(giftPic);
     position.appendChild(greeting);
-    position.style.display = "inline";
+    position.style.display = "block";
     }
   hideForms();
   response();
@@ -123,8 +125,8 @@ var handleRadio = function(event){
   value = parseInt(other);
   console.log(value);
   hideInput();
-  var newLabel = document.getElementById("label7");
-  newLabel.textContent ="$" + value;
+  var newLabel = document.getElementById("span");
+  newLabel.textContent ='$' + value;
 };
 
 hideInput();
