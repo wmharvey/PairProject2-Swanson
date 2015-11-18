@@ -428,8 +428,9 @@ textarea {
   font-style: italic;
 }
 
-#virtues {
+#virtues img {
   text-align: center;
+  max-width: 100%;
 }
 
 .video {
