@@ -684,8 +684,8 @@ transition: color .4s;
 
 #giftsRight {
   display: inline-block;
-  float:right;
-  margin-right:9%;
+/*  float:right;*/
+  margin-right:auto;
 }
 
 #giftsCenter {
