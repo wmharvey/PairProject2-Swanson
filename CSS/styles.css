@@ -724,7 +724,8 @@ transition: color .4s;
 
 #donation {
   margin-top:25px;
-  margin-left: 15%;
+  margin-left: 5%;
+  margin-right: auto;
   margin-bottom:20px;
 }
 
