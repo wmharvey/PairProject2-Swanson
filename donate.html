@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" type = "text/css" href="CSS/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <title>Swanson '16</title>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html">
+<img src="IMG/logo.png">
+</a>
+</div>
+<nav>
+  <ul>
+  <li><a href="about.html">About</a></li>
+  <li><a href="donate.html">Support</a></li>
+  <li><a href="connect.html">Connect</a></li>
+  </ul>
+</nav>
+</header>
+  <section id="gifts">
+    <h2>In return for your support at each level, please accept a complimentary gift:</h2>
+    <div id="giftsLeft">
+      <figure>
+        <img src="IMG/reward1.jpg">
+        <figCaption>At the $25 level, you will recieve a Ron Sticker</figCaption>
+      </figure>
+      <figure>
+        <img src="IMG/reward3.jpg">
+        <figCaption>At the $100 level, you will recieve a Ron Breakfast</figCaption>
+      </figure>
+    </div>
+    <div id="giftsCenter">
+      <figure>
+        <img src="IMG/reward5.jpg">
+        <figCaption>At the $1,000 level, you will recieve a Ron Shack</figCaption>
+      </figure>
+      <figure>
+        <img src="IMG/reward2.jpg">
+        <figCaption>At the $50 level, you will recieve a Ron Snack</figCaption>
+      </figure>
+    </div>
+    <div id="giftsRight">
+      <figure>
+        <img src="IMG/reward4.jpg">
+        <figCaption>At the $500 level, you will recieve a Ron Shirt</figCaption>
+      </figure>
+      <figure>
+        <img src="IMG/reward6.jpg">
+        <figCaption>At the $2,700 level, you will recieve a Ron Canoe</figCaption>
+      </figure>
+    </div>
+  </section>
+  <section>
+    <div id="giftForms">
+    <div>
+      <form id="donation">
+        <input type="radio" id="option1" name="donate" value="25" onchange="hideInput()">
+       <label for="option1" class="radioButtons"><span>$25</span></label>
+        <input type="radio" id="option2" name="donate" value="50" onchange="hideInput()" checked="checked">
+       <label for="option2" class="radioButtons"><span>$50</span></label>
+        <input type="radio" id="option3" name="donate" value="100" onchange="hideInput()">
+       <label for="option3" class="radioButtons"><span>$100</span></label>
+        <input type="radio" id="option4" name="donate" value="500" onchange="hideInput()">
+       <label for="option4" class="radioButtons"><span>$500</span></label>
+        <input type="radio" id="option5" name="donate" value="1000" onchange="hideInput()">
+       <label for="option5" class="radioButtons"><span>$1,000</span></label>
+        <input type="radio" id="option6" name="donate" value="2700" onchange="hideInput()">
+       <label for="option6" class="radioButtons"><span>$2,700</span></label>
+        <input type="radio" id="option7" name="donate" onchange="showInput()" value="">
+       <label for="option7" id="label7" class="radioButtons"><span id="span">Other Amount</span></label>
+        <div id="hidden">
+          <input type="text" id="other" name="otherAmount" placeholder="Max: $2,700">
+           <button id="other" button type="submit">Set Amount</button>
+        </div>
+      </form>
+    </div>
+    <div id="info">
+      <form id="paymentInfo">
+        <fieldset>
+        <legend id="legend">Payment Information</legend>
+        <h4>If you have given previously, enter your credit card number and check the box below</h4>
+          <label class="formLabel" for="credit">Credit Card Number:
+            <input name="credit" type="text" id="cred"/></label>
+          <label for="ccv">CCV:
+            <input name="ccv" type="text" /></label>
+          <label><input type="checkbox" id="cbox1" value="checkbox" onCheck=
+            "handleCheck(this)">I have given previously</label>
+        <legend id="legend">Personal Information</legend>
+          <label for="firstName">First Name:
+            <input name="firstName" type="text" id="first" /></label>
+          <label for="lastName">Last Name:
+            <input name="lastName" type="text" id="last"/></label>
+          <label for="phoneNumber">Phone Number:
+            <input name="phoneNumber" type="text" id="phone"/></label>
+          <label for="email">Email:
+            <input name="email" type="text" id="email"/></label>
+        <legend id="legend">Billing Information</legend>
+          <label for="address">Address:
+            <input name="address" type="text" id="address"/></label>
+          <label for="city">City:
+            <input name="city" type="text" id="city"/></label>
+          <label for="state">State:
+            <input name="state" type="text" id="state"/></label>
+          <label for="zip">Zip:
+            <input name="zip" type="text" id="zip"/></label>
+          <button id="sub" button type="submit">Donate!</button>
+        </fieldset>
+      </form>
+    </div>
+    </div>
+  </section>
+  <div id="empty">
+  </div>
+<footer>
+<div id="socialmedia">
+  <ul>
+    <li><a href="https://www.facebook.com/Ron-Swanson-2016-337707289674750/"><img src="IMG/facebook.png"></a></li>
+    <li><a href="https://instagram.com/explore/tags/ronswanson/"><img src="IMG/instagram.png"></a></li>
+    <li><a href="https://plus.google.com/106567143866509076532/posts"><img src="IMG/googleplus.png"></a></li>
+  </ul>
+</div>
+<div id="footernav">
+  <ul>
+  <li><a href="about.html">About</a></li>
+  <li><a href="donate.html">Support</a></li>
+  <li><a href="connect.html">Connect</a></li>
+  <li><a href="crew.html">The Team</a></li>
+  </ul>
+</div>
+<div id="copyright"><p>&copy; Copyright 2015</p></div>
+</footer>
+
+ <script src ="donate.js" type="text/javascript"></script>
+
+</body>
+</html>
