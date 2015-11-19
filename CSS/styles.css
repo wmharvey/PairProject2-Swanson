@@ -442,19 +442,34 @@ transition: color .4s;
 }
 
 /*donation styles*/
+
 #giftsLeft {
-  display: inline-flex;
-  margin-left: 15%;
+  display: inline-block;
+  float: left;
+  margin-left: 8%;
 }
 
 #giftsRight {
-  display: inline-flex;
-  margin-left: 15%;
+  display: inline-block;
+  float:right;
+  margin-right:9%;
 }
 
-#gifts {
-  display: inline;
+#giftsCenter {
+  display:inline-block;
 }
+
+/*#gifts {
+  width:100%;
+}*/
+
+#gifts:after {
+  content: "";
+  display:block;
+  clear:both;
+
+}
+
 
 #gifts h2 {
   font-family: 'Bree Serif', serif;
@@ -462,7 +477,7 @@ transition: color .4s;
   text-align: center;
   font-size: 40px;
   margin-top: 20px;
-  margin-left: 5%
+  margin-left: -1%
 }
 
 #giftForms {
@@ -475,38 +490,41 @@ transition: color .4s;
 
 #donation {
   margin-top:25px;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-bottom:20px;
 }
 
 #donation label {
-    float:left;
-    width:170px;
-    margin:4px;
-    background-color:white;
-    border-radius:4px;
-    border:1px solid #D0D0D0;
-    display: block;
-    position: relative;
-    overflow: hidden;
+  float:left;
+  width:170px;
+  margin:4px;
+  background-color:white;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
 }
 
 #donation label span {
-    text-align:center;
-    font-size: 16px;
-    padding:13px 0px;
-    display:block;
+  text-align:center;
+  font-size: 16px;
+  padding:13px 0px;
+  display:block;
 }
 
 #donation input[type="radio"] {
-    position:absolute;
-    visibility: hidden;
+  position:absolute;
+  visibility: hidden;
 }
 
 #donation input:checked + label {
-    background-color:#2980b9;
-    color:white;
-    border:solid white 2px;
+  background-color:#2980b9;
+  color:white;
+  border:solid white 2px;
 }
 
 #hidden input {
@@ -527,7 +545,7 @@ transition: color .4s;
   background: white;
   border: 0;
   border-radius: 2px;
-  width:30%;
+  width:35%;
   min-width: 500px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -537,9 +555,8 @@ transition: color .4s;
 }
 
 #paymentInfo label {
-  margin-left: 32%;
+  margin-left: 34%;
   margin-top: 2px;
-  text-transform: uppercase;
   color: #2980b9;
   text-align: center;
 }
@@ -547,7 +564,7 @@ transition: color .4s;
 
 #paymentInfo input[type="text"] {
   display:block;
-  margin-left: 32%;
+  margin-left: 34%;
   margin-top:5px;
 }
 
@@ -568,8 +585,8 @@ transition: color .4s;
 #sub {
   background: #2980b9;
   width: 40%;
-  margin-left:26%;
-  margin-top:15px;
+  margin-left:28%;
+  margin-top:10px;
   text-transform: uppercase;
   color: white;
   letter-spacing: .2em;
@@ -584,16 +601,16 @@ transition: color .4s;
   color: #e74c3c;
   text-align: center;
   font-size: 40px;
-  margin-top: -5px;
-  margin-left: 15%;
+  margin-left: 12%;
 }
 
 #gifts figure {
   background-color: white;
   border: solid #ecf0f1 10px;
-    -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
+  color: #2980b9
 }
 
 
