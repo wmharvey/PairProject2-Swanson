@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+Styles sheet
+=======
 html {
  /* max-width: 1500px;*/
   width: 100%;
@@ -440,7 +443,7 @@ textarea {
 
 #virtues img {
   text-align: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 .video {
@@ -689,9 +692,9 @@ transition: color .4s;
   display:inline-block;
 }
 
-/*#gifts {
+#gifts {
   width:100%;
-}*/
+}
 
 #gifts:after {
   content: "";
@@ -1825,3 +1828,4 @@ transition: color .4s;
 
 } /* End media only screen and (max-width: 480px)
 
+>>>>>>> 88e793ae3e03fd75b70fb3fd2fef45e87d054a82
