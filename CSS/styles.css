@@ -116,6 +116,10 @@ p, li {
   text-transform: uppercase;
 }
 
+#contactform .email {
+  margin-left: 82px;
+}
+
 fieldset {
   border: 0;
 }
@@ -845,8 +849,6 @@ transition: color .4s;
   width: 300px;
 }
 
-
-
 #gifts figCaption {
   text-align: center;
   padding-bottom: 5px;
@@ -961,7 +963,7 @@ transition: color .4s;
   padding: 20px;
   }
 
-  #contactform {
+#contactform {
   width: 50%;
   float: left;
   margin-top: 90px;
@@ -1017,6 +1019,9 @@ transition: color .4s;
   text-transform: uppercase;
 }
 
+#contactform .email {
+  margin-left: 82px;
+}
 
 #commentform .submit {
   background-color: #2980b9;
@@ -1359,6 +1364,9 @@ transition: color .4s;
   text-transform: uppercase;
 }
 
+#contactform .email {
+  margin-left: 82px;
+}
 
 #commentform .submit {
   background-color: #2980b9;
@@ -1647,7 +1655,7 @@ transition: color .4s;
   padding: 20px;
   }
 
-  #contactform {
+#contactform {
   min-width: 90%;
   float: left;
   margin-top: 60px;
@@ -1691,6 +1699,10 @@ transition: color .4s;
   min-width: 70%;
   float: left;
   clear: both;
+}
+
+#contactform .email {
+  margin-left: 82px;
 }
 
 #displayed {
