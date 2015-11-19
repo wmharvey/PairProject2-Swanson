@@ -696,7 +696,7 @@ transition: color .4s;
 }
 
 #gifts {
-  width:70%;
+  max-width:100%;
   margin-right:auto;
   margin-left:auto;
 }
@@ -870,10 +870,10 @@ transition: color .4s;
 }
 #empty img {
   margin-top:2%;
-  margin-left:33%;
+  margin-left:25%;
+  margin-right:auto;
   margin-bottom: 2%;
   border:solid white 10px;
-  float:center;
 }
 
 #empty h3 {
