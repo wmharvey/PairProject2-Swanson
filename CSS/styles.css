@@ -440,7 +440,7 @@ textarea {
 
 #virtues img {
   text-align: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 .video {
@@ -681,17 +681,17 @@ transition: color .4s;
 
 #giftsRight {
   display: inline-block;
-  float:right;
-  margin-right:9%;
+/*  float:right;*/
+  margin-right:auto;
 }
 
 #giftsCenter {
   display:inline-block;
 }
 
-/*#gifts {
+#gifts {
   width:100%;
-}*/
+}
 
 #gifts:after {
   content: "";
