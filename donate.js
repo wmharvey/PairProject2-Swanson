@@ -4,12 +4,12 @@ var radioForm = document.getElementById("donation");
 var billingForm = document.getElementById("paymentInfo");
 var cbox1 = document.getElementById("cbox1")
 var information = [];
-// var storedBilling = [];
-  var getData = localStorage.getItem('billingInformation');
-  var getDataParsed = JSON.parse(getData);
-  if (localStorage.billingInformation) {
-  information = getDataParsed;
-  };
+
+var getData = localStorage.getItem('billingInformation');
+var getDataParsed = JSON.parse(getData);
+if (localStorage.billingInformation) {
+information = getDataParsed;
+};
 
 var formIds = {
   creditNum: document.getElementById("cred"),
@@ -79,6 +79,9 @@ var handleBilling = function (event) {
   if ((!event.target.credit.value) || (!event.target.ccv.value) || (!event.target.firstName.value) || (!event.target.lastName.value) || (!event.target.phoneNumber.value) || (!event.target.email.value) || (!event.target.address.value) || (!event.target.city.value) || (!event.target.state.value) || (!event.target.zip.value)) {
       return alert("Please Fill All Fields");
     }
+  if (value === undefined) {
+    return alert("Please select a donation amount");
+  }
 
   var credit = event.target.credit.value;
   var ccv = event.target.ccv.value;
