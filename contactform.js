@@ -64,6 +64,7 @@ function checkLocal () {
     commentData = JSON.parse(localStorage.getItem('commentData'));
     renderAllComments();
   } else {
+    var April = new Comment('April Ludgate', 'Usually I hate people, places, and things. Ron\'s OK though.');
     var Leslie = new Comment('Leslie Knope', 'Ron is a poetic noble land mermaid.');
     var Tom = new Comment('Tom Haverford', 'Entertainment720 will be hosting all the dope ass parties in the White House if Ron gets elected.');
     var Andy = new Comment('Andy Dwyer', 'Ron gave me the best advice I ever received. \'Never half-ass two things. Whole-ass one thing.\'');
