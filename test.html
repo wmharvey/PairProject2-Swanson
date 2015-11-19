@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LogPas Test</title>
+  <link rel="stylesheet" href="chartstyle.css">
+</head>
+<body>
+<h1>LogPas Test</h1>
+<p>IPSUM</p>
+<h1>Simple Login Page</h1>
+<form name="login">
+  Username: <input type="text" name="userid"/>
+  &nbsp;
+  Password: <input type="password" name="pswrd"/>
+  <input type="button" onclick="check(this.form)" value="Login"/>
+  <input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+  function check(form) { /*function to check userid & password*/
+      /*the following code checkes whether the entered userid and password are matching*/
+      if(form.userid.value == "123" && form.pswrd.value == "456") {
+          window.open('target.html')/*opens the target page while Id & password matches*/
+      }
+      else {
+          alert("Error Password or Username")/*displays error message*/
+      }
+  }
+</script>
+
+</body>
+</html>
