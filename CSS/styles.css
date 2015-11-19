@@ -443,7 +443,7 @@ textarea {
 
 #virtues img {
   text-align: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 .video {
@@ -681,11 +681,13 @@ transition: color .4s;
   float: left;
   margin-left: 8%;
 }
+#gifts img{
+  height: 300px;
+}
 
 #giftsRight {
   display: inline-block;
-  float:right;
-  margin-right:9%;
+  margin-right: auto;
 }
 
 #giftsCenter {
@@ -841,7 +843,8 @@ transition: color .4s;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  color: #2980b9
+  color: #2980b9;
+  width: 300px;
 }
 
 
