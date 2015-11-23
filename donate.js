@@ -22,13 +22,6 @@ var formIds = {
   state: document.getElementById("state"),
   zip: document.getElementById("zip")
 };
-
-for(var i = 0; i < 6; i++) {
-  radios[i].onclick = function() {
-    value = parseInt(this.value);
-    console.log(value);
-  }
-};
 //http://jsfiddle.net/T7gE7/4/     ~source sorta
 var hideInput = function() {
   var empty = document.getElementById("empty");
@@ -54,7 +47,6 @@ var Billing = function (creditNum, ccv, firstName, lastName, phone, email, addre
   this.zip = zip;
   information.push(this);
 };
-
 
 var handleCheck = function(checkbox) {
   if (cbox1.checked) {
@@ -98,7 +90,6 @@ var handleBilling = function (event) {
   var newBilling = new Billing(credit, ccv, first, last, number, email, add, city, state, zip);
   var toLocal = JSON.stringify(information);
   localStorage.setItem('billingInformation', toLocal);
-  console.log(credit + " is your credit card number");
   }
 
   var hideForms = function() {
@@ -121,15 +112,20 @@ var handleBilling = function (event) {
   hideForms();
   response();
 };
-
+//radio buttons
 var handleRadio = function(event){
   event.preventDefault();
   var other = event.target.otherAmount.value;
   value = parseInt(other);
-  console.log(value);
   hideInput();
   var newLabel = document.getElementById("span");
   newLabel.textContent ='$' + value;
+};
+
+for(var i = 0; i < 6; i++) {
+  radios[i].onclick = function() {
+    value = parseInt(this.value);
+  }
 };
 
 hideInput();
