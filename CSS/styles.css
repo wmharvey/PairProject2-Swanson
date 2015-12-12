@@ -1,3 +1,5 @@
+
+
 html {
  /* max-width: 1500px;*/
   width: 100%;
@@ -46,7 +48,7 @@ nav ul {
 
 nav li {
   font-family: 'Raleway', sans-serif;
-  display: inline;
+  display: inline-block;
   list-style-type: none;
   color: white;
   text-transform: uppercase;
