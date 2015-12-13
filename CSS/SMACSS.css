@@ -61,3 +61,17 @@ blockquote, q {
 }
 
 /*Standard Styles*/
+
+/*
+* === LAYOUT ===
+*/
+
+/*Banner*/
+
+#highlights {
+  display: inline;
+}
+
+.spacer {
+  width: 25px;
+}
