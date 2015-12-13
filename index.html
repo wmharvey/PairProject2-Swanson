@@ -7,11 +7,9 @@
   <title>Swanson '16</title>
   <link rel = "stylesheet" type = "text/css" href="CSS/SMACSS.css">
   <link rel = "stylesheet" type = "text/css" href="CSS/styles.css">
+  <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
   <link href='//fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="js/tvcredits.jquery.js"></script>
 </head>
 
 <body>
@@ -51,16 +49,7 @@
 
     <div id="updates">
       <h2>PRESS RELEASES</h2>
-      <h3>**Tuesday November 17th**</h3>
-      <p>Swanson supporters rally outside of Pawnee City Hall hoping to catch a glimpse of our future-president after his New England tour, where he talked to an official for 5 minutes and spent the rest of the week in the Vermont forests harvesting maple syrup.</p> <hr/>
-      <h3>**Thursday November 12th**</h3>
-      <p>Swanson promises to ship all vegetables, fruits, "raw food", and all other "hippy food" to a remote island in the Pacific in order to toughen up America. Vows to replace all hippy food in elementary schools with pork crackling and steak.</p> <hr/>
-      <h3>**Monday November 2nd**</h3>
-      <p>Swanson refuses Super PAC donations; relies only on the "blood and sweat" of his team and his cached gold bars that may or may not be buried in various locations around Pawnee.</p><hr/>
-      <h3>**Wednesday October 14th**</h3>
-      <p>Swanson stands up against the mass media by not participating in the first GOP debate because of Swanson's personal view to never participate in any activity that doesn't involve physical tests."Winners only exist if said activity involves a physical competition or an IQ test". Consequently, holds his own 'debate' against himself. Swanson was the definitive winner of the first ever Swanson-Swanson Debate; promises to "abolish child labor laws" and cut 99% from all government programs.</p><hr/>
-      <h3>**Monday September 28th**</h3>
-      <p>It's OFFICIAL! Ron Swanson announced his candidacy via Morris Code from his cabin located deep in the Hoosier National Park.</p>
+      <!-- insert handlebars template here -->
     </div>
 
     <div id="events">
@@ -95,7 +84,10 @@
     </div>
     <div id="copyright"><p>&copy; Copyright 2015</p></div>
   </footer>
-  
+
+  <script src=libraries/handlebars-v4.0.5.js></script>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/tvcredits.jquery.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
   <script src="js/map.js"></script>
   <script src="js/index.js"></script>
