@@ -74,4 +74,5 @@ blockquote, q {
 
 .spacer {
   width: 25px;
+  display: inline;
 }
