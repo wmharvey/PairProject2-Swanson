@@ -62,6 +62,10 @@ blockquote, q {
 
 /*Standard Styles*/
 
+.center {
+  text-align: center;
+}
+
 /*
 * === LAYOUT ===
 */
@@ -75,4 +79,19 @@ blockquote, q {
 .spacer {
   width: 25px;
   display: inline;
+}
+
+/*Press Releases*/
+
+.event {
+  margin: 15px 0;
+}
+
+.title {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.body, .date {
+  margin: 5px 0;
 }
