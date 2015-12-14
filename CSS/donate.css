@@ -31,3 +31,13 @@
   color: white;
   border: solid white 2px;
 }
+
+.type {
+  display: block;
+  text-align: center;
+}
+
+#paymentInfo input {
+  display: block;
+  margin: 10px auto;
+}
