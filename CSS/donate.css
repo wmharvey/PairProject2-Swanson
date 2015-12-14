@@ -41,3 +41,29 @@
   display: block;
   margin: 10px auto;
 }
+
+#empty {
+  display: none;
+  width:100%
+  height: 600px;
+  background-color: #e74c3c;
+  border-top: solid white 10px;
+  border-bottom: solid white 10px;
+}
+
+#empty img {
+  display: block;
+  max-width: 100%;
+  margin: 10px auto;
+  border:solid white 10px;
+  float:center;
+}
+
+#empty h3 {
+  font-family: 'Bree Serif', serif;
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 5px 12px;
+  color: white;
+  text-align: center;
+}
