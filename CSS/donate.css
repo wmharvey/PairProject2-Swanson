@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  width: 170px;
+  background-color: white;
+  margin: 10px 0 10px 5px;
+  text-align: center;
+  padding: 13px 0;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.custom-amount {
+  display: block;
+  margin: 10px auto;
+  height: 30px;
+}
+
+.set-amount {
+  width: 130px;
+  text-align: center;
+  line-height: 2;
+  background-color: white;
+}
+
+.selected {
+  background-color: #2980b9;
+  color: white;
+  border: solid white 2px;
+}

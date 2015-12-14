@@ -719,8 +719,8 @@ transition: color .4s;
 
 #giftForms {
   background-color: #e74c3c;
-  margin-right: -10px;
-  margin-left: -10px;
+  /*margin-right: -10px;*/
+  /*margin-left: -10px;*/
   border-top: solid white 10px ;
   border-bottom: solid white 10px;
 }
