@@ -122,6 +122,7 @@ p, li {
 
 fieldset {
   border: 0;
+  width: 100%;
 }
 
 textarea {
@@ -687,8 +688,8 @@ transition: color .4s;
 
 #giftsLeft {
   display: inline-block;
-  float: left;
-  margin-left: 8%;
+  float: none;
+  margin-left: 0%;
 }
 #gifts img{
   height: 300px;
@@ -696,15 +697,19 @@ transition: color .4s;
 
 #giftsRight {
   display: inline-block;
-  margin-right: auto;
+  margin-right: 0%;
+  float: none;
 }
 
 #giftsCenter {
   display:inline-block;
+  float: none;
+  margin-right: 0%;
 }
 
 #gifts {
   width:100%;
+  text-align: center;
 }
 
 #gifts:after {
@@ -732,21 +737,30 @@ transition: color .4s;
 }
 
 #donation {
-  margin-top:25px;
-  margin-left: 5%;
-  margin-right: auto;
-  margin-bottom:20px;
+  margin: 40px auto;
+  text-align: center;
+  display: block;
+  height: 80px;
+  line-height: 5;
+}
+
+.radioButtons {
+  width: 100px;
+  height: 65px;
+  padding: 20px;
 }
 
 #donation label {
-  float:left;
-  width:170px;
-  margin:4px;
+  display: inline;
+  float:none;
+  width: 120px;
+  height: 100px;
+  margin: 4px;
   background-color:white;
   border-radius:4px;
   border:1px solid #D0D0D0;
-  display: block;
   position: relative;
+  white-space: nowrap;
   overflow: hidden;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -757,7 +771,7 @@ transition: color .4s;
   text-align:center;
   font-size: 16px;
   padding:13px 0px;
-  display:block;
+  display:inline;
 }
 
 #donation input[type="radio"] {
@@ -789,7 +803,7 @@ transition: color .4s;
   background: white;
   border: 0;
   border-radius: 2px;
-  width:43%;
+  width: 70%;
   min-width: 500px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
