@@ -19,10 +19,10 @@ header {
   margin-left: -8px;
   margin-right: -10px;
   margin-top: -10px;
+  text-align: center;
 }
 
 #logo {
-float: left;
 margin-right: 20px;
 margin-top: 25px;
 }
@@ -37,13 +37,10 @@ margin-top: 25px;
 }
 
 nav ul {
-  float: right;
-  margin-right: 20px;
   padding: 0%;
-  display: inline;
-  margin-top: 80px;
-  margin-right: 90px;
+  display: block;
   max-width: 100%;
+  margin-top: -10px;
 }
 
 nav li {
@@ -54,8 +51,8 @@ nav li {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 30px;
-  margin-right: 50px;
   max-width: 100%;
+  padding: 20px;
 }
 
 nav a {
@@ -291,36 +288,37 @@ textarea {
 
 /*Home Page Body Styles*/
 
-#map {
-  height: 500px;
-  width: 500px;
-}
-
 #highlights {
   border: #000 1px solid;
   overflow: hidden;
-  width: 80%;
   margin: 0 auto;
 }
 
 
 #events {
-  float: left;
+  width: 40%;
+  float: none;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  margin-top: 10%;
-  margin-left: 15%;
+  margin: 10% auto;
   padding: 20px;
 }
 
+#events li {
+  text-align: center;
+}
+
 #map {
-  float: right;
-  margin-right: 15%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  height: 500px;
+  width: 80%;
+  float: none;
+  margin: 0px auto;
+  margin-bottom: 80px;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -337,6 +335,7 @@ textarea {
 }
 
 #highlights {
+  max-height: 50px;
   border: 0;
   background: white;
   width: 60%;
@@ -368,7 +367,7 @@ textarea {
 
 #events li{
   list-style-type: none;
-  text-align: left;
+  text-align: center;
   padding-top: 5px;
   color: #e74c3c;
 }
@@ -381,6 +380,7 @@ textarea {
   margin-top: -2px;
   padding-left: 35px;
   color: #2980b9;
+  margin-bottom: 10px;
 }
 
 #events h2{
@@ -393,6 +393,7 @@ textarea {
 }
 
 #indexbackground {
+  height: 160%;
   background: #e74c3c;
   border-top: 10px white solid;
   margin-top: 40px;
@@ -404,6 +405,7 @@ textarea {
    content: "";
    display: block;
    clear: both;
+   height: 100%;
 }
 
 /*About Styles*/
@@ -450,8 +452,9 @@ textarea {
 }
 
 .video {
-  float: right;
+  float: none;
   padding: 2%;
+  text-align: center;
 }
 
 #support {
@@ -614,6 +617,7 @@ footer {
   clear: both;
   background: #2980b9;
   min-height: 200px;
+  margin-top: 0;
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: -50px;
@@ -654,6 +658,7 @@ footer {
   margin-top: 30px;
   margin-right: 150px;
   font-style: normal;
+  text-align: right;
 }
 
 #footernav li {
@@ -892,14 +897,14 @@ transition: color .4s;
 
 header {
   background-color: #2980b9;
-  height: 250px;
+  height: 200px;
   margin-left: -8px;
   margin-right: -10px;
   margin-top: -10px;
+  text-align: center;
 }
 
 #logo {
-float: left;
 margin-right: 20px;
 margin-top: 25px;
 }
@@ -913,14 +918,17 @@ margin-top: 25px;
   color: white;
 }
 
+nav {
+  /*margin-top: -100px;*/
+}
+
 nav ul {
-  float: right;
   padding: 0%;
   display: inline;
-  margin-top: 80px;
-  margin-right: 1%;
   width: 30%;
-  text-align: right;
+  text-align: center;
+  float: none;
+  /*margin-right: 3%;*/
 }
 
 nav li {
@@ -930,7 +938,7 @@ nav li {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 30px;
-  margin-right: 5%;
+  padding: 5px;
 }
 
 nav a {
@@ -944,10 +952,10 @@ transition: color .4s;
 }
 
 #map {
-  float: right;
-  margin-right: 25%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  float: none;
+  width: 80%;
+  margin: 40px auto;
+  margin-bottom: 100px;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -955,15 +963,19 @@ transition: color .4s;
 }
 
 #events {
-  margin-left: 32%;
+  width: 50%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  margin-top: 10%;
+  margin: 10% auto;
   padding: 20px;
   }
+#events li {
+  text-align: center;
+}
+
 
 #contactform {
   width: 50%;
@@ -1114,6 +1126,7 @@ transition: color .4s;
   margin-top: 30px;
   margin-right: 5%;
   font-style: normal;
+  text-align: right;
 }
 
 #footernav li {
@@ -1240,10 +1253,10 @@ header {
   margin-left: -8px;
   margin-right: -10px;
   margin-top: -10px;
+  text-align: center;
 }
 
 #logo {
-float: left;
 margin-right: 20px;
 margin-top: 25px;
 }
@@ -1257,14 +1270,16 @@ margin-top: 25px;
   color: white;
 }
 
+nav {
+  text-align: center;
+  margin-top: 25px;
+}
+
 nav ul {
-  float: right;
+  float: none;
   padding: 0%;
   display: inline;
-  margin-top: 80px;
-  margin-right: 1%;
-  width: 30%;
-  text-align: right;
+  width: 100%;
 }
 
 nav li {
@@ -1274,7 +1289,8 @@ nav li {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 30px;
-  margin-right: 5%;
+  padding: 10px;
+  font-size: 1.5em;
 }
 
 nav a {
@@ -1288,10 +1304,9 @@ transition: color .4s;
 }
 
 #map {
-  float: right;
-  margin-right: 18%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  float: none;
+  margin: 40px auto;
+  margin-bottom: 100px;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -1299,14 +1314,18 @@ transition: color .4s;
 }
 
 #events {
-  margin-left: 25%;
+  width: 50%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  margin-top: 10%;
+  margin: 10% auto;
   padding: 20px;
+  }
+
+  #events li {
+    text-align: center;
   }
 
   #contactform {
@@ -1455,6 +1474,7 @@ transition: color .4s;
 }
 
 #footernav {
+  text-align: right;
   float: right;
   margin-top: 30px;
   margin-right: 5%;
@@ -1588,7 +1608,6 @@ header {
 }
 
 #logo {
-float: left;
 margin-left: 3%;
 }
 
@@ -1604,24 +1623,23 @@ margin-left: 3%;
 }
 
 nav ul {
-  clear: both;
-  float: left;
   padding: 0%;
-  display: inline;
+  display: block;
   width: 100%;
-  text-align: right;
+  text-align: center;
   background: #2980b9;
-  margin-top: 0px;
+  margin-top: -2%;
 }
 
 nav li {
   font-family: 'Raleway', sans-serif;
   list-style-type: none;
-  display: inline;
+  display: block;
   color: white;
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 20px;
+  padding: 3px;
 }
 
 nav a {
@@ -1635,11 +1653,9 @@ transition: color .4s;
 }
 
 #map {
-  float: right;
+  float: none;
   max-width: 80%;
-  margin-right: 10%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin: 40px auto;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -1647,15 +1663,19 @@ transition: color .4s;
 }
 
 #events {
-  margin-left: 11%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  margin-top: 10%;
+  margin: 10% auto;
   padding: 20px;
+  width: 79%;
   }
+
+#events li {
+  text-align: center;
+}
 
 #contactform {
   min-width: 90%;
@@ -1723,6 +1743,7 @@ transition: color .4s;
   margin-top: 30px;
   margin-right: 5%;
   font-style: normal;
+  text-align: right;
 }
 
 #footernav li {
