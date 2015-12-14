@@ -3,6 +3,7 @@
 html {
  /* max-width: 1500px;*/
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,10 +20,10 @@ header {
   margin-left: -8px;
   margin-right: -10px;
   margin-top: -10px;
+  text-align: center;
 }
 
 #logo {
-float: left;
 margin-right: 20px;
 margin-top: 25px;
 }
@@ -37,13 +38,10 @@ margin-top: 25px;
 }
 
 nav ul {
-  float: right;
-  margin-right: 20px;
   padding: 0%;
-  display: inline;
-  margin-top: 80px;
-  margin-right: 90px;
+  display: block;
   max-width: 100%;
+  margin-top: -10px;
 }
 
 nav li {
@@ -54,8 +52,8 @@ nav li {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 30px;
-  margin-right: 50px;
   max-width: 100%;
+  padding: 20px;
 }
 
 nav a {
@@ -84,9 +82,11 @@ p, li {
 }
 
 #contactform {
-  min-width: 40%;
   float: left;
+  min-width: 40%;
+  width: 40%;
   margin-top: 90px;
+  margin-left: 10%;
   background: white;
   border: 0;
   border-radius: 2px;
@@ -97,7 +97,8 @@ p, li {
 }
 
 #contactposition {
-  margin-left: 270px;
+
+
 }
 
 #contactform h1 {
@@ -124,6 +125,7 @@ p, li {
 
 fieldset {
   border: 0;
+  width: 100%;
 }
 
 textarea {
@@ -133,7 +135,7 @@ textarea {
 #contact img {
   clear: both;
   position: relative;
-  margin-left: 80px;
+  /*margin-left: 80px;*/
   margin-top: 40px;
 }
 
@@ -284,43 +286,44 @@ textarea {
 }
 
 #commentsubmit{
-  margin-right: 5%;
+  margin-right: 3%;
   float: right;
   margin-top: 10px;
 }
 
 /*Home Page Body Styles*/
 
-#map {
-  height: 500px;
-  width: 500px;
-}
-
 #highlights {
   border: #000 1px solid;
   overflow: hidden;
-  width: 80%;
   margin: 0 auto;
 }
 
 
 #events {
-  float: left;
+  width: 40%;
+  float: none;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  margin-top: 10%;
-  margin-left: 15%;
+  margin: 10% auto;
   padding: 20px;
 }
 
+#events li {
+  text-align: center;
+}
+
 #map {
-  float: right;
-  margin-right: 15%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  height: 500px;
+  width: 80%;
+  float: none;
+  margin: 0px auto;
+  margin-bottom: 80px;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -337,6 +340,7 @@ textarea {
 }
 
 #highlights {
+  max-height: 50px;
   border: 0;
   background: white;
   width: 60%;
@@ -368,7 +372,7 @@ textarea {
 
 #events li{
   list-style-type: none;
-  text-align: left;
+  text-align: center;
   padding-top: 5px;
   color: #e74c3c;
 }
@@ -381,6 +385,7 @@ textarea {
   margin-top: -2px;
   padding-left: 35px;
   color: #2980b9;
+  margin-bottom: 10px;
 }
 
 #events h2{
@@ -393,6 +398,7 @@ textarea {
 }
 
 #indexbackground {
+  height: 160%;
   background: #e74c3c;
   border-top: 10px white solid;
   margin-top: 40px;
@@ -404,6 +410,7 @@ textarea {
    content: "";
    display: block;
    clear: both;
+   height: 100%;
 }
 
 /*About Styles*/
@@ -450,8 +457,9 @@ textarea {
 }
 
 .video {
-  float: right;
+  float: none;
   padding: 2%;
+  text-align: center;
 }
 
 #support {
@@ -614,6 +622,7 @@ footer {
   clear: both;
   background: #2980b9;
   min-height: 200px;
+  margin-top: 0;
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: -50px;
@@ -654,6 +663,7 @@ footer {
   margin-top: 30px;
   margin-right: 150px;
   font-style: normal;
+  text-align: right;
 }
 
 #footernav li {
@@ -681,8 +691,8 @@ transition: color .4s;
 
 #giftsLeft {
   display: inline-block;
-  float: left;
-  margin-left: 8%;
+  float: none;
+  margin-left: 0%;
 }
 #gifts img{
   height: 300px;
@@ -690,15 +700,19 @@ transition: color .4s;
 
 #giftsRight {
   display: inline-block;
-  margin-right: auto;
+  margin-right: 0%;
+  float: none;
 }
 
 #giftsCenter {
   display:inline-block;
+  float: none;
+  margin-right: 0%;
 }
 
 #gifts {
   width:100%;
+  text-align: center;
 }
 
 #gifts:after {
@@ -726,21 +740,30 @@ transition: color .4s;
 }
 
 #donation {
-  margin-top:25px;
-  margin-left: 5%;
-  margin-right: auto;
-  margin-bottom:20px;
+  margin: 40px auto;
+  text-align: center;
+  display: block;
+  height: 80px;
+  line-height: 5;
+}
+
+.radioButtons {
+  width: 100px;
+  height: 65px;
+  padding: 20px;
 }
 
 #donation label {
-  float:left;
-  width:170px;
-  margin:4px;
+  display: inline;
+  float:none;
+  width: 120px;
+  height: 100px;
+  margin: 4px;
   background-color:white;
   border-radius:4px;
   border:1px solid #D0D0D0;
-  display: block;
   position: relative;
+  white-space: nowrap;
   overflow: hidden;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -751,7 +774,7 @@ transition: color .4s;
   text-align:center;
   font-size: 16px;
   padding:13px 0px;
-  display:block;
+  display:inline;
 }
 
 #donation input[type="radio"] {
@@ -783,7 +806,7 @@ transition: color .4s;
   background: white;
   border: 0;
   border-radius: 2px;
-  width:43%;
+  width: 70%;
   min-width: 500px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -892,14 +915,14 @@ transition: color .4s;
 
 header {
   background-color: #2980b9;
-  height: 250px;
+  height: 200px;
   margin-left: -8px;
   margin-right: -10px;
   margin-top: -10px;
+  text-align: center;
 }
 
 #logo {
-float: left;
 margin-right: 20px;
 margin-top: 25px;
 }
@@ -913,14 +936,17 @@ margin-top: 25px;
   color: white;
 }
 
+nav {
+  /*margin-top: -100px;*/
+}
+
 nav ul {
-  float: right;
   padding: 0%;
   display: inline;
-  margin-top: 80px;
-  margin-right: 1%;
   width: 30%;
-  text-align: right;
+  text-align: center;
+  float: none;
+  /*margin-right: 3%;*/
 }
 
 nav li {
@@ -930,7 +956,7 @@ nav li {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 30px;
-  margin-right: 5%;
+  padding: 5px;
 }
 
 nav a {
@@ -944,10 +970,10 @@ transition: color .4s;
 }
 
 #map {
-  float: right;
-  margin-right: 25%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  float: none;
+  width: 80%;
+  margin: 40px auto;
+  margin-bottom: 100px;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -955,20 +981,25 @@ transition: color .4s;
 }
 
 #events {
-  margin-left: 32%;
+  width: 50%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  margin-top: 10%;
+  margin: 10% auto;
   padding: 20px;
   }
+#events li {
+  text-align: center;
+}
+
 
 #contactform {
-  width: 50%;
+  width: 400px;
   float: left;
   margin-top: 90px;
+  margin-left: 10%;
   background: white;
   border: 0;
   border-radius: 2px;
@@ -979,14 +1010,14 @@ transition: color .4s;
 }
 
 #contactposition {
-  margin-left: 10%;
+
 }
 
 #contact img {
   float: right;
   position: relative;
   margin-right: 0%;
-  margin-top: -45%;
+  margin-top: -450px;
   margin-bottom: 40px;
 }
 
@@ -1007,7 +1038,7 @@ transition: color .4s;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  width: 90%;
+  width: 100%;
 }
 
 #commentform label, #commentform input{
@@ -1054,17 +1085,18 @@ transition: color .4s;
 
 
 #displayed {
-  float: left;
-  width: 50%;
+  float: none;
+  width: 60%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   border: 0;
+  margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 2%;
+  padding: 10px;
 }
 
 #displayed h1 {
@@ -1104,8 +1136,9 @@ transition: color .4s;
 }
 
 #commentsubmit{
-  margin-right: 1%;
-  float: right;
+  margin: 0 auto;
+  float: none;
+  width: 60%;
   margin-top: 20px;
 }
 
@@ -1114,6 +1147,7 @@ transition: color .4s;
   margin-top: 30px;
   margin-right: 5%;
   font-style: normal;
+  text-align: right;
 }
 
 #footernav li {
@@ -1240,10 +1274,10 @@ header {
   margin-left: -8px;
   margin-right: -10px;
   margin-top: -10px;
+  text-align: center;
 }
 
 #logo {
-float: left;
 margin-right: 20px;
 margin-top: 25px;
 }
@@ -1257,14 +1291,16 @@ margin-top: 25px;
   color: white;
 }
 
+nav {
+  text-align: center;
+  margin-top: 25px;
+}
+
 nav ul {
-  float: right;
+  float: none;
   padding: 0%;
   display: inline;
-  margin-top: 80px;
-  margin-right: 1%;
-  width: 30%;
-  text-align: right;
+  width: 100%;
 }
 
 nav li {
@@ -1274,7 +1310,8 @@ nav li {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 30px;
-  margin-right: 5%;
+  padding: 10px;
+  font-size: 1.5em;
 }
 
 nav a {
@@ -1288,10 +1325,9 @@ transition: color .4s;
 }
 
 #map {
-  float: right;
-  margin-right: 18%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  float: none;
+  margin: 40px auto;
+  margin-bottom: 100px;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -1299,20 +1335,26 @@ transition: color .4s;
 }
 
 #events {
-  margin-left: 25%;
+  width: 50%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  margin-top: 10%;
+  margin: 10% auto;
   padding: 20px;
   }
 
+  #events li {
+    text-align: center;
+  }
+
   #contactform {
-  width: 50%;
-  float: left;
+    float: none;
+  min-width: 473px;
+  width: 80%;
   margin-top: 90px;
+  margin: 0 auto;
   background: white;
   border: 0;
   border-radius: 2px;
@@ -1323,7 +1365,7 @@ transition: color .4s;
 }
 
 #contactposition {
-  margin-left: 10%;
+  margin: 0 auto;
 }
 
 #contact img {
@@ -1399,8 +1441,9 @@ transition: color .4s;
 
 
 #displayed {
-  float: left;
-  width: 50%;
+  float: none;
+  margin: 0 auto;
+  width: 80%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -1408,8 +1451,7 @@ transition: color .4s;
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   border: 0;
   margin-top: 40px;
-  margin-left: 25%;
-
+  padding: 10px;
 }
 
 #displayed h1 {
@@ -1449,12 +1491,14 @@ transition: color .4s;
 }
 
 #commentsubmit{
-  margin-left: 22%;
-  float: left;
+  width: 90%;
+  margin: 0 auto;
+  float: none;
   margin-bottom: 40px;
 }
 
 #footernav {
+  text-align: right;
   float: right;
   margin-top: 30px;
   margin-right: 5%;
@@ -1573,6 +1617,10 @@ transition: color .4s;
 
 }
 
+#contact img {
+  display: none;
+}
+
 } /* End media only screen and (max-width 767px)
 
 /* iPhones and other mobiles */
@@ -1588,7 +1636,6 @@ header {
 }
 
 #logo {
-float: left;
 margin-left: 3%;
 }
 
@@ -1604,24 +1651,23 @@ margin-left: 3%;
 }
 
 nav ul {
-  clear: both;
-  float: left;
   padding: 0%;
-  display: inline;
+  display: block;
   width: 100%;
-  text-align: right;
+  text-align: center;
   background: #2980b9;
-  margin-top: 0px;
+  margin-top: -2%;
 }
 
 nav li {
   font-family: 'Raleway', sans-serif;
   list-style-type: none;
-  display: inline;
+  display: block;
   color: white;
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 20px;
+  padding: 3px;
 }
 
 nav a {
@@ -1635,11 +1681,9 @@ transition: color .4s;
 }
 
 #map {
-  float: right;
+  float: none;
   max-width: 80%;
-  margin-right: 10%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin: 40px auto;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -1647,21 +1691,27 @@ transition: color .4s;
 }
 
 #events {
-  margin-left: 11%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  margin-top: 10%;
+  margin: 10% auto;
   padding: 20px;
+  width: 79%;
   }
 
+#events li {
+  text-align: center;
+}
+
 #contactform {
-  min-width: 90%;
-  float: left;
+  float: none;
+  min-width: 473px;
+  width: 85%;
   margin-top: 60px;
   background: white;
+  margin: 0 auto;
   border: 0;
   border-radius: 2px;
   text-align: left;
@@ -1672,7 +1722,7 @@ transition: color .4s;
 }
 
 #contactposition {
-  margin-left: 10%;
+  margin: 0 auto;
 }
 
 #contact img {
@@ -1708,13 +1758,13 @@ transition: color .4s;
 }
 
 #displayed {
-  min-width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 #commentsubmit{
-  margin-left: 4%;
-  float: left;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -1723,6 +1773,7 @@ transition: color .4s;
   margin-top: 30px;
   margin-right: 5%;
   font-style: normal;
+  text-align: right;
 }
 
 #footernav li {
