@@ -82,9 +82,11 @@ p, li {
 }
 
 #contactform {
-  min-width: 40%;
   float: left;
+  min-width: 40%;
+  width: 40%;
   margin-top: 90px;
+  margin-left: 10%;
   background: white;
   border: 0;
   border-radius: 2px;
@@ -95,7 +97,8 @@ p, li {
 }
 
 #contactposition {
-  margin-left: 270px;
+
+
 }
 
 #contactform h1 {
@@ -132,7 +135,7 @@ textarea {
 #contact img {
   clear: both;
   position: relative;
-  margin-left: 80px;
+  /*margin-left: 80px;*/
   margin-top: 40px;
 }
 
@@ -283,7 +286,7 @@ textarea {
 }
 
 #commentsubmit{
-  margin-right: 5%;
+  margin-right: 3%;
   float: right;
   margin-top: 10px;
 }
@@ -993,9 +996,10 @@ transition: color .4s;
 
 
 #contactform {
-  width: 50%;
+  width: 400px;
   float: left;
   margin-top: 90px;
+  margin-left: 10%;
   background: white;
   border: 0;
   border-radius: 2px;
@@ -1006,14 +1010,14 @@ transition: color .4s;
 }
 
 #contactposition {
-  margin-left: 10%;
+
 }
 
 #contact img {
   float: right;
   position: relative;
   margin-right: 0%;
-  margin-top: -45%;
+  margin-top: -450px;
   margin-bottom: 40px;
 }
 
@@ -1034,7 +1038,7 @@ transition: color .4s;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
-  width: 90%;
+  width: 100%;
 }
 
 #commentform label, #commentform input{
@@ -1081,17 +1085,18 @@ transition: color .4s;
 
 
 #displayed {
-  float: left;
-  width: 50%;
+  float: none;
+  width: 60%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   -moz-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   border: 0;
+  margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 2%;
+  padding: 10px;
 }
 
 #displayed h1 {
@@ -1131,8 +1136,9 @@ transition: color .4s;
 }
 
 #commentsubmit{
-  margin-right: 1%;
-  float: right;
+  margin: 0 auto;
+  float: none;
+  width: 60%;
   margin-top: 20px;
 }
 
@@ -1344,9 +1350,11 @@ transition: color .4s;
   }
 
   #contactform {
-  width: 50%;
-  float: left;
+    float: none;
+  min-width: 473px;
+  width: 80%;
   margin-top: 90px;
+  margin: 0 auto;
   background: white;
   border: 0;
   border-radius: 2px;
@@ -1357,7 +1365,7 @@ transition: color .4s;
 }
 
 #contactposition {
-  margin-left: 10%;
+  margin: 0 auto;
 }
 
 #contact img {
@@ -1433,8 +1441,9 @@ transition: color .4s;
 
 
 #displayed {
-  float: left;
-  width: 50%;
+  float: none;
+  margin: 0 auto;
+  width: 80%;
   background: white;
   border-radius: 2px;
   -webkit-box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
@@ -1442,8 +1451,7 @@ transition: color .4s;
   box-shadow: 4px -5px 30px -9px rgba(97,97,97,0.76);
   border: 0;
   margin-top: 40px;
-  margin-left: 25%;
-
+  padding: 10px;
 }
 
 #displayed h1 {
@@ -1483,8 +1491,9 @@ transition: color .4s;
 }
 
 #commentsubmit{
-  margin-left: 22%;
-  float: left;
+  width: 90%;
+  margin: 0 auto;
+  float: none;
   margin-bottom: 40px;
 }
 
@@ -1608,6 +1617,10 @@ transition: color .4s;
 
 }
 
+#contact img {
+  display: none;
+}
+
 } /* End media only screen and (max-width 767px)
 
 /* iPhones and other mobiles */
@@ -1693,10 +1706,12 @@ transition: color .4s;
 }
 
 #contactform {
-  min-width: 90%;
-  float: left;
+  float: none;
+  min-width: 473px;
+  width: 85%;
   margin-top: 60px;
   background: white;
+  margin: 0 auto;
   border: 0;
   border-radius: 2px;
   text-align: left;
@@ -1707,7 +1722,7 @@ transition: color .4s;
 }
 
 #contactposition {
-  margin-left: 10%;
+  margin: 0 auto;
 }
 
 #contact img {
@@ -1743,13 +1758,13 @@ transition: color .4s;
 }
 
 #displayed {
-  min-width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 #commentsubmit{
-  margin-left: 4%;
-  float: left;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
