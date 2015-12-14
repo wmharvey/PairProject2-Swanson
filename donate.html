@@ -86,33 +86,34 @@
       <div id="info">
         <form id="paymentInfo">
           <fieldset>
+
           <legend id="legend">Payment Information</legend>
-          <h4>If you have given previously, enter your credit card number and check the box below</h4>
-            <label class="formLabel" for="credit">Credit Card Number:
-              <input name="credit" type="text" id="cred"/></label>
-            <label for="ccv">CCV:
-              <input name="ccv" type="text" /></label>
-            <label><input type="checkbox" id="cbox1" value="checkbox" onCheck=
-              "handleCheck(this)">I have given previously</label>
+          <div>Credit Card Number:</div>
+          <input id="credit-card" type="number" />
+          <div>CVV:</div>
+          <input id="credit-card" type="number" />
+
           <legend id="legend">Personal Information</legend>
-            <label for="firstName">First Name:
-              <input name="firstName" type="text" id="first" /></label>
-            <label for="lastName">Last Name:
-              <input name="lastName" type="text" id="last"/></label>
-            <label for="phoneNumber">Phone Number:
-              <input name="phoneNumber" type="text" id="phone"/></label>
-            <label for="email">Email:
-              <input name="email" type="text" id="email"/></label>
+          <div>First Name:</div>
+          <input id="first-name" type="text" />
+          <div>Last Name:</div>
+          <input id="first-name" type="text" />
+          <div>Phone Number:</div>
+          <input id="first-name" type="text" />
+          <div>Email:</div>
+          <input id="first-name" type="text" />
+
           <legend id="legend">Billing Information</legend>
-            <label for="address">Address:
-              <input name="address" type="text" id="address"/></label>
-            <label for="city">City:
-              <input name="city" type="text" id="city"/></label>
-            <label for="state">State:
-              <input name="state" type="text" id="state"/></label>
-            <label for="zip">Zip:
-              <input name="zip" type="text" id="zip"/></label>
-            <button id="sub" button type="submit">Donate!</button>
+          <div>Address:</div>
+          <input id="address" type="text" />
+          <div>City:</div>
+          <input id="city" type="text" />
+          <div>State:</div>
+          <input id="state" type="text" />
+          <div>Zip:</div>
+          <input id="zip" type="text" />
+
+          <button id="sub" button type="submit">Donate!</button>
           </fieldset>
         </form>
       </div>
